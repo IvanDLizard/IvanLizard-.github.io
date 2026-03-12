@@ -1,0 +1,218 @@
+/* Ivan D. Linares*/
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    background-color: lightblue;
+}
+
+/* Background Image with Transparency */
+/* need position: fixed; and top: 0; left: 0; */
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact Information Section */
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: #1565c0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* Education Section */
+.education {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 3px solid #1976d2;
+    padding-bottom: 10px;
+}
+
+/* Skills Section */
+.skills {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 3px solid #1976d2;
+    padding-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin: 15px 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-left: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 1.8;
+    color: #444;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Paragraphs */
+p {
+    margin: 10px 0;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Projects Section */
+.projects {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-bottom: 3px solid #1976d2;
+    padding-bottom: 10px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.project-card p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(13, 71, 161, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}
